@@ -1,11 +1,11 @@
 
 import React, { useContext } from 'react';
 import noteContext from '../context/noteContext';
+import Notes from './Notes';
 
 
 const Home = () => {
-  const context = useContext(noteContext);
-  const { notes, setNotes } = context;
+
   // JSX code
   return(
   <div>
@@ -27,12 +27,12 @@ const Home = () => {
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-<h3> Notes</h3>
-{notes.map((note)=>{
-  return note.title;
-})}
 
+<Notes/>
   </div>
+
+  
+
 
   )
 };
