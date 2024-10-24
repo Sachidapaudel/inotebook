@@ -3,12 +3,8 @@ import {Link, useLocation} from "react-router-dom";
 
 
 const Navbar = () => {
+  //to highlight the active link
   let location = useLocation();
-
-  React.useEffect(() => {
-    // Google Analytics
-    console.log(location.pathname);
-  }, [location]);
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
     <div className="container-fluid">
